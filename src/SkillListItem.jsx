@@ -1,8 +1,8 @@
 import React from "react";
 
-function SkillListItem(){
+function SkillListItem({skill, index}){
     return(
-        <li>SkillListItem</li>
+       <li className="SkillListItem">{skill.name} <span className = "level">Level {skill.level}</span> </li> 
     );
 }
 

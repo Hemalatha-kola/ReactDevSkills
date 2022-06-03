@@ -9,7 +9,7 @@ function NewSkillForm({addSkill}){
        
     );
 
-    function handleSubmit(evt){
+    function handleAddSkill(evt){
         evt.preventDefault();
         addSkill(newSkill);
         setNewSkill({name: "", level: 3 });
@@ -19,7 +19,7 @@ function NewSkillForm({addSkill}){
       }
     return(
         <>
-        <form className="NewSkillForm" onSubmit={handleSubmit}>
+        <form className="NewSkillForm" onSubmit={handleAddSkill}>
             <label>Skill</label>
             <input 
             className="NewSkillForm"
